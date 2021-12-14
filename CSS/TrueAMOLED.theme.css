@@ -39,9 +39,13 @@
 -----------------------------------------*/
 
 /* Imports */
-@import "https://wapourvave.github.io/TrueAMOLED/CSS/TrueAMOLED.dev.theme.css";
+@import "https://wapourvave.github.io/True-AMOLED/CSS/TrueAMOLED.dev.theme.css";
 
-/* Discord Variables */
+/*-----------------------------------------
+			  Theme Settings
+-----------------------------------------*/
+
+/* Discord Variables Override */
 .theme-dark
 {
     /* AMOLED */
