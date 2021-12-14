@@ -22,7 +22,7 @@
 -----------------------------------------*/
 
 /* Discord Variables Override */
-.theme-dark
+:root
 {
     /* AMOLED */
     --AMOLED-client-colour: #000000;
