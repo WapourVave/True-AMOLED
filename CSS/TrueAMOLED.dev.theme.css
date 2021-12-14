@@ -1,0 +1,239 @@
+/**
+ * @name True AMOLED Dev
+ * @version X.X.X
+ * @author Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Enable Me Please! ->
+ * @authorLink https://github.com/WapourVave
+ * @description True AMOLED Theme for the entire Discord Client!
+ * @website https://wapourvave.github.io/index.html
+ * @source https://github.com/WapourVave/MyTheme
+*/
+
+/**
+*  MIT License
+*
+* Copyright (c) 2021 Wapour Vave
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+**/
+
+/*-----------------------------------------
+-------------------------------------------
+                True AMOLED
+-------------------------------------------
+-----------------------------------------*/
+
+/* Imports */
+@import "https://wapourvave.github.io/Discord-Global-Things/CSS/WapoursGlobalThings.theme.css";
+
+/* Global Variables */
+:root
+{
+    /* Theme Info */
+    --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme%20Icon/True%20AMOLED%20Icon.svg);
+    --AMOLED-icon-size: 30px;
+    --AMOLED-icon-position: 10px 12px;
+    --AMOLED-version: "v0.7.0 ";
+    --AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+    --AMOLED-dev-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+}
+
+/* Discord Variables */
+.theme-dark
+{
+    /* AMOLED */
+    --AMOLED-client-colour: #000000;
+    --AMOLED-secondary-colour: #2f3136;
+
+    /* Client Background */
+    --background-primary: var(--AMOLED-client-colour); /* Base Client Colour */
+    --background-secondary: var(--AMOLED-client-colour); /* Client Side Bars */
+    --background-secondary-alt: var(--AMOLED-client-colour); /* User Area Bottom Left, Tabs */
+    --background-tertiary: var(--AMOLED-client-colour); /* Titlebar, Server List Background, Search Text Area's, Borders */
+    --background-accent: #4f545c; /* New Unreads Background and such */
+    --background-floating: var(--AMOLED-client-colour); /* User Popouts */
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+
+    /* Main Client Buttons */
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+
+    /* Text */
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #72767d;
+    --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
+    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --channels-default: #8e9297; /* Channel Text */
+
+    /* Text Area */
+    --channeltextarea-background: var(--AMOLED-client-colour);
+    --textbox-markdown-syntax: #8e9297;
+
+    /* Message Area */
+	--background-message-hover: rgba(4,4,5,0.07);
+
+    /* Message Formatting Mentioned */
+    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+
+    /* Scrollbar */
+    --scrollbar-thin-thumb: #202225;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #202225;
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: #202225;
+    --scrollbar-auto-scrollbar-color-track: #2f3136;
+
+    /* Quick Switcher */
+    --deprecated-quickswitcher-input-background: var(--AMOLED-secondary-colour); /* Search Background */
+
+    /* Unknown */
+    --info-positive-text: #fff;
+    --info-warning-text: #fff;
+    --info-danger-text: #fff;
+    --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+    --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --info-help-text: #fff;
+    --status-warning-text: #000;
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --activity-card-background: var(--AMOLED-client-colour);
+}
+
+/*-----------------------------------------
+				Themes Area
+-----------------------------------------*/
+
+/* Hide default BD Theme Icon */
+[id='True AMOLED-card'] .bd-addon-header .bd-icon path,
+[id='True AMOLED Dev-card'] .bd-addon-header .bd-icon path
+{
+	display: none;
+}
+
+/* New Theme Icon */
+[id='True AMOLED-card'] .bd-addon-header,
+[id='True AMOLED Dev-card'] .bd-addon-header
+{
+	background-image: var(--AMOLED-icon-image);
+	background-repeat: no-repeat;
+	background-size: var(--AMOLED-icon-size);
+	background-position: var(--AMOLED-icon-position);
+}
+
+[id='True AMOLED-card'] .bd-version,
+[id='True AMOLED Dev-card'] .bd-version,
+[id='True AMOLED-card'] .bd-author,
+[id='True AMOLED Dev-card'] .bd-author,
+[id='True AMOLED-card'] .bd-title .bd-link,
+[id='True AMOLED Dev-card'] .bd-title .bd-link
+{
+ 	font-size: 0px;
+}
+
+/* True AMOLED Version */
+[id='True AMOLED-card'] .bd-version:after,
+[id='True AMOLED Dev-card'] .bd-version:after
+{
+	font-size: 14px;
+	content: var(--AMOLED-version);
+}
+
+/* True AMOLED Author */
+[id='True AMOLED-card'] .bd-author:after,
+[id='True AMOLED-card'] .bd-title .bd-link:after
+{
+	font-size: 14px;
+	content: var(--AMOLED-author);
+}
+
+/* True AMOLED Dev Author */
+[id='True AMOLED Dev-card'] .bd-author:after,
+[id='True AMOLED Dev-card'] .bd-title .bd-link:after
+{
+	font-size: 14px;
+	content: var(--AMOLED-dev-author);
+}
+
+/*-----------------------------------------
+				Messages
+-----------------------------------------*/
+
+/* Codeblock */
+.markup-2BOw-j code
+{
+    /* background-color: var(--AMOLED-secondary-colour); */
+    border-color: var(--AMOLED-secondary-colour);
+}
+
+.markup-2BOw-j code.inline, .inlineCode-2ngu6Y
+{
+    border: 1px solid;
+    border-radius: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2.720px;
+    padding-right: 2.720px;
+    border-color: var(--AMOLED-secondary-colour);
+}
+
+/* Auto Complete */
+.theme-dark .autocomplete-1vrmpx
+{
+    background-color: var(--AMOLED-client-colour);
+}
+
+/* Auto Complete Selected */
+.theme-dark .selected-1Tbx07
+{
+    background-color: var(--AMOLED-secondary-colour);
+}
+
+/*-----------------------------------------
+				Channels
+-----------------------------------------*/
+.progressBarContainer-cCu8a2
+{
+    display: none;
+}
+
+/*-----------------------------------------
+				DM's
+-----------------------------------------*/
+/* Add Friends Menu */
+.theme-dark .root-1gCeng
+{
+    background-color: var(--AMOLED-client-colour);
+}
