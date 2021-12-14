@@ -8,20 +8,47 @@
  * @source https://github.com/WapourVave/MyTheme
 */
 
+/**
+*  MIT License
+*
+* Copyright (c) 2021 Wapour Vave
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+**/
+
 /*-----------------------------------------
 -------------------------------------------
         Tab Titlebar Intergration
 -------------------------------------------
 -----------------------------------------*/
 
+/* Imports */
+@import "https://wapourvave.github.io/Discord-Global-Things/CSS/WapoursGlobalThings.theme.css";
+
 /* Global Variables */
 :root
 {
     /* Theme Info */
-    --AMOLED-icon-image: url(https://reading-urls.is-la.me/ADFLzJH.svg);
+    --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme%20Icon/True%20AMOLED%20Icon.svg);
     --AMOLED-icon-size: 30px;
     --AMOLED-icon-position: 10px 12px;
-    --AMOLED-version: "v0.6.0 ";
+    --AMOLED-version: "v0.7.0 ";
     --AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂"
 }
 
@@ -37,7 +64,7 @@
     --background-secondary: var(--AMOLED-client-colour); /* Client Side Bars */
     --background-secondary-alt: var(--AMOLED-client-colour); /* User Area Bottom Left, Tabs */
     --background-tertiary: var(--AMOLED-client-colour); /* Titlebar, Server List Background, Search Text Area's, Borders */
-    --background-accent: #4f545c;
+    --background-accent: #4f545c; /* New Unreads Background and such */
     --background-floating: var(--AMOLED-client-colour); /* User Popouts */
     --background-modifier-hover: rgba(79,84,92,0.16);
     --background-modifier-active: rgba(79,84,92,0.24);
@@ -114,6 +141,7 @@
 	display: none;
 }
 
+/* New Theme Icon */
 [id='True AMOLED-card'] .bd-addon-header
 {
 	background-image: var(--AMOLED-icon-image);
@@ -190,12 +218,4 @@
 .theme-dark .root-1gCeng
 {
     background-color: var(--AMOLED-client-colour);
-}
-
-/*-----------------------------------------
-			Quick Switcher
------------------------------------------*/
-.input-2VB9rf [aria-label="Quick switcher"]
-{
-    
 }
