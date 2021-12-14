@@ -48,7 +48,7 @@
     --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
     --AMOLED-icon-size: 30px;
     --AMOLED-icon-position: 10px 12px;
-    --AMOLED-version: "v1.1.0 ";
+    --AMOLED-version: "v1.1.1 ";
     --AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
     --AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 }
@@ -135,6 +135,13 @@
 /*-----------------------------------------
 				Themes Area
 -----------------------------------------*/
+
+/* Addon Cards */
+.bd-addon-card,
+.bd-addon-header
+{
+    box-shadow: 0px 0px 0px 1px var(--AMOLED-secondary-colour);
+}
 
 /* Hide default BD Theme Icon */
 [id='True AMOLED-card'] .bd-addon-header .bd-icon path,
