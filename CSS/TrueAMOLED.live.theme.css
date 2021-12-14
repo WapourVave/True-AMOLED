@@ -39,13 +39,13 @@
 -----------------------------------------*/
 
 /* Imports */
-@import "https://wapourvave.github.io/Discord-Global-Things/CSS/WapoursGlobalThings.theme.css";
+@import "https://wapourvave.github.io/Discord-Global-Things/CSS/WapoursGlobalThings.live.theme.css";
 
 /* Global Variables */
 :root
 {
     /* Theme Info */
-    --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme%20Icon/True%20AMOLED%20Icon.svg);
+    --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
     --AMOLED-icon-size: 30px;
     --AMOLED-icon-position: 10px 12px;
     --AMOLED-version: "v1.0.2 ";
