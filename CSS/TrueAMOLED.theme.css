@@ -8,6 +8,27 @@
  * @source https://github.com/WapourVave/True-AMOLED
 */
 
+/*-----------------------------------------
+-------------------------------------------
+                True AMOLED
+-------------------------------------------
+-----------------------------------------*/
+
+/* Imports */
+@import "https://wapourvave.github.io/True-AMOLED/CSS/TrueAMOLED.live.theme.css";
+
+/*-----------------------------------------
+			  Theme Settings
+-----------------------------------------*/
+
+/* Discord Variables Override */
+.theme-dark
+{
+    /* AMOLED */
+    --AMOLED-client-colour: #000000;
+    --AMOLED-secondary-colour: #2f3136;
+}
+
 /**
 *  MIT License
 *
@@ -31,24 +52,3 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 **/
-
-/*-----------------------------------------
--------------------------------------------
-                True AMOLED
--------------------------------------------
------------------------------------------*/
-
-/* Imports */
-@import "https://wapourvave.github.io/True-AMOLED/CSS/TrueAMOLED.live.theme.css";
-
-/*-----------------------------------------
-			  Theme Settings
------------------------------------------*/
-
-/* Discord Variables Override */
-.theme-dark
-{
-    /* AMOLED */
-    --AMOLED-client-colour: #000000;
-    --AMOLED-secondary-colour: #2f3136;
-}
