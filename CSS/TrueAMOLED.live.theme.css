@@ -48,7 +48,7 @@
     --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
     --AMOLED-icon-size: 30px;
     --AMOLED-icon-position: 10px 12px;
-    --AMOLED-version: "v1.0.6 ";
+    --AMOLED-version: "v1.1.0 ";
     --AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
     --AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 }
@@ -58,7 +58,7 @@
 {
     /* AMOLED */
     --AMOLED-client-colour: #000000;
-    --AMOLED-secondary-colour: #2f3136;
+    --AMOLED-secondary-colour: #191b1e;
 
     /* Client Background */
     --background-primary: var(--AMOLED-client-colour); /* Base Client Colour */
@@ -189,7 +189,7 @@
 
 .theme-dark .footer-2gL1pp
 {
-    background-color: var(--AMOLED-primary-colour);
+    background-color: var(--AMOLED-client-colour);
 }
 
 /*-----------------------------------------
@@ -241,4 +241,55 @@
 .theme-dark .root-1gCeng
 {
     background-color: var(--AMOLED-client-colour);
+}
+
+/*-----------------------------------------
+                Search Bar
+-----------------------------------------*/
+
+/* Search Bar */
+.theme-dark .container-3ayLPN
+{
+    background-color: var(--AMOLED-client-colour);
+}
+.option-96V44q:after 
+{
+    opacity: 0;
+}
+
+/*-----------------------------------------
+                Tool Tips
+-----------------------------------------*/
+
+/* Tool Tip Border */
+.theme-dark .tooltipPrimary-1d1ph4,
+.theme-dark .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:before,
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before
+{
+    box-shadow: 0px 0px 0px 1px var(--AMOLED-secondary-colour);
+}
+
+/* Remove triangles (for now) */
+.theme-dark .tooltipPointer-3ZfirK,
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:after,
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after
+{
+    display: none;
+}
+
+/*-----------------------------------------
+                User Popouts
+-----------------------------------------*/
+.userPopout-xaxa6l,
+.fullscreenOnMobile-1bD22y
+{
+    box-shadow: 0px 0px 0px 1px var(--AMOLED-secondary-colour)!important;
+}
+
+/*-----------------------------------------
+            Status Selector
+-----------------------------------------*/
+.menu-3sdvDG[role="menu"]
+{
+    box-shadow: 0px 0px 0px 1px var(--AMOLED-secondary-colour);
 }
