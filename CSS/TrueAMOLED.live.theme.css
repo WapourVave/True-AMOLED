@@ -7,7 +7,13 @@
  * @website https://github.com/WapourVave
  * @source https://github.com/WapourVave/True-AMOLED
 */
-
+/*-----------------------------------------
+-------------------------------------------
+                True AMOLED
+-------------------------------------------
+-----------------------------------------*/
+/* External Imports */
+@import "https://wapourvave.github.io/Discord-Global-Things/CSS/WapoursGlobalThings.live.theme.css";
 /**
 *  MIT License
 *
@@ -31,305 +37,261 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 **/
-
 /*-----------------------------------------
--------------------------------------------
-                True AMOLED
--------------------------------------------
+    Themes Tab
 -----------------------------------------*/
-
-/* Imports */
-@import "https://wapourvave.github.io/Discord-Global-Things/CSS/WapoursGlobalThings.live.theme.css";
-
-/* Global Variables */
-:root
-{
-    /* Theme Info */
-    --AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
-    --AMOLED-icon-size: 30px;
-    --AMOLED-icon-position: 10px 12px;
-    --AMOLED-version: "v1.1.3 ";
-    --AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
-    --AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
-}
-
-/* Discord Variables */
-.theme-dark
-{
-    /* AMOLED */
-    --AMOLED-client-colour: #000000;
-    --AMOLED-secondary-colour: #191b1e;
-
-    /* Client Background */
-    --background-primary: var(--AMOLED-client-colour); /* Base Client Colour */
-    --background-secondary: var(--AMOLED-client-colour); /* Client Side Bars */
-    --background-secondary-alt: var(--AMOLED-client-colour); /* User Area Bottom Left, Tabs */
-    --background-tertiary: var(--AMOLED-client-colour); /* Titlebar, Server List Background, Search Text Area's, Borders */
-    --background-accent: #4f545c; /* New Unreads Background and such */
-    --background-floating: var(--AMOLED-client-colour); /* User Popouts */
-    --background-modifier-hover: rgba(79,84,92,0.16);
-    --background-modifier-active: rgba(79,84,92,0.24);
-    --background-modifier-selected: rgba(79,84,92,0.32);
-    --background-modifier-accent: hsla(0,0%,100%,0.06);
-
-    /* Main Client Buttons */
-    --interactive-normal: #b9bbbe;
-    --interactive-hover: #dcddde;
-    --interactive-active: #fff;
-    --interactive-muted: #4f545c;
-
-    /* Text */
-    --header-primary: #fff;
-    --header-secondary: #b9bbbe;
-    --text-normal: #dcddde;
-    --text-muted: #72767d;
-    --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-    --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
-    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
-    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
-    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
-    --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-    --channels-default: #8e9297; /* Channel Text */
-
-    /* Text Area */
-    --channeltextarea-background: var(--AMOLED-client-colour);
-    --textbox-markdown-syntax: #8e9297;
-
-    /* Message Area */
-	--background-message-hover: rgba(4,4,5,0.07);
-
-    /* Message Formatting Mentioned */
-    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
-    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
-
-    /* Scrollbar */
-    --scrollbar-thin-thumb: #202225;
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #202225;
-    --scrollbar-auto-track: transparent;
-    --scrollbar-auto-scrollbar-color-thumb: #202225;
-    --scrollbar-auto-scrollbar-color-track: #2f3136;
-
-    /* Quick Switcher */
-    --deprecated-quickswitcher-input-background: var(--AMOLED-secondary-colour); /* Search Background */
-
-    /* Unknown */
-    --info-positive-text: #fff;
-    --info-warning-text: #fff;
-    --info-danger-text: #fff;
-    --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
-    --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-    --info-help-text: #fff;
-    --status-warning-text: #000;
-    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
-    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
-    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
-    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
-    --logo-primary: #fff;
-    --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-    --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-    --activity-card-background: var(--AMOLED-client-colour);
-}
-
-/*-----------------------------------------
-    Themes Area
------------------------------------------*/
-
 /* Addon Cards */
-.bd-addon-card
-{
-    border: var(--AMOLED-secondary-colour) 1px solid;
+.bd-addon-card {
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /* Hide default BD Theme Icon */
-[id='True AMOLED-card'] .bd-addon-header .bd-icon path,
-[id='True AMOLED Live-card'] .bd-addon-header .bd-icon path
-{
-	display: none;
+[id="True AMOLED-card"] .bd-addon-header .bd-icon path,
+[id="True AMOLED Live-card"] .bd-addon-header .bd-icon path {
+  display: none;
 }
 
 /* New Theme Icon */
-[id='True AMOLED-card'] .bd-addon-header,
-[id='True AMOLED Live-card'] .bd-addon-header
-{
-	background-image: var(--AMOLED-icon-image);
-	background-repeat: no-repeat;
-	background-size: var(--AMOLED-icon-size);
-	background-position: var(--AMOLED-icon-position);
+[id="True AMOLED-card"] .bd-addon-header,
+[id="True AMOLED Live-card"] .bd-addon-header {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 10px 12px;
 }
 
-[id='True AMOLED-card'] .bd-version,
-[id='True AMOLED Live-card'] .bd-version,
-[id='True AMOLED-card'] .bd-author,
-[id='True AMOLED Live-card'] .bd-author,
-[id='True AMOLED-card'] .bd-title .bd-link,
-[id='True AMOLED Live-card'] .bd-title .bd-link
-{
- 	font-size: 0px;
+[id="True AMOLED-card"] .bd-version,
+[id="True AMOLED Live-card"] .bd-version,
+[id="True AMOLED-card"] .bd-author,
+[id="True AMOLED Live-card"] .bd-author,
+[id="True AMOLED-card"] .bd-title .bd-link,
+[id="True AMOLED Live-card"] .bd-title .bd-link {
+  font-size: 0px;
 }
 
 /* True AMOLED Version */
-[id='True AMOLED-card'] .bd-version:after,
-[id='True AMOLED Live-card'] .bd-version:after
-{
-	font-size: 14px;
-	content: var(--AMOLED-version);
+[id="True AMOLED-card"] .bd-version:after,
+[id="True AMOLED Live-card"] .bd-version:after {
+  font-size: 14px;
+  content: "v1.2.0 ";
 }
 
 /* True AMOLED Author */
-[id='True AMOLED-card'] .bd-author:after,
-[id='True AMOLED-card'] .bd-title .bd-link:after
-{
-	font-size: 14px;
-	content: var(--AMOLED-author);
+[id="True AMOLED-card"] .bd-author:after,
+[id="True AMOLED-card"] .bd-title .bd-link:after {
+  font-size: 14px;
+  content: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 }
 
 /* True AMOLED Dev Author */
-[id='True AMOLED Live-card'] .bd-author:after,
-[id='True AMOLED Live-card'] .bd-title .bd-link:after
-{
-	font-size: 14px;
-	content: var(--AMOLED-Live-author);
+[id="True AMOLED Live-card"] .bd-author:after,
+[id="True AMOLED Live-card"] .bd-title .bd-link:after {
+  font-size: 14px;
+  content: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 }
 
-.theme-dark .footer-2gL1pp
-{
-    background-color: var(--AMOLED-client-colour);
+.theme-dark .footer-2gL1pp {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/*-----------------------------------------
+    Theme Vars
+-----------------------------------------*/
+/* Global Variables */
+:root {
+  /* AMOLED */
+  --AMOLED-client-colour: #000000;
+  --AMOLED-secondary-colour: #191b1e;
+}
+
+/*-----------------------------------------
+    Discord Dark Theme
+-----------------------------------------*/
+/* Discord Variables */
+.theme-dark {
+  /* Client Background */
+  --background-primary: var(--AMOLED-client-colour);
+  /* Base Client Colour */
+  --background-secondary: var(--AMOLED-client-colour);
+  /* Client Side Bars */
+  --background-secondary-alt: var(--AMOLED-client-colour);
+  /* User Area Bottom Left, Tabs */
+  --background-tertiary: var(--AMOLED-client-colour);
+  /* Titlebar, Server List Background, Search Text Area's, Borders */
+  --background-accent: #4f545c;
+  /* New Unreads Background and such */
+  --background-floating: var(--AMOLED-client-colour);
+  /* User Popouts */
+  --background-modifier-hover: rgba(79,84,92,0.16);
+  --background-modifier-active: rgba(79,84,92,0.24);
+  --background-modifier-selected: rgba(79,84,92,0.32);
+  --background-modifier-accent: hsla(0,0%,100%,0.06);
+  /* Main Client Buttons */
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #fff;
+  --interactive-muted: #4f545c;
+  /* Text */
+  --header-primary: #fff;
+  --header-secondary: #b9bbbe;
+  --text-normal: #dcddde;
+  --text-muted: #72767d;
+  --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+  --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+  --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
+  --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+  --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+  --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+  --channels-default: #8e9297;
+  /* Channel Text */
+  /* Text Area */
+  --channeltextarea-background: var(--AMOLED-client-colour);
+  --textbox-markdown-syntax: #8e9297;
+  /* Message Area */
+  --background-message-hover: rgba(4,4,5,0.07);
+  /* Message Formatting Mentioned */
+  --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+  --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+  /* Scrollbar */
+  --scrollbar-thin-thumb: #202225;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #202225;
+  --scrollbar-auto-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-track: #2f3136;
+  /* Quick Switcher */
+  --deprecated-quickswitcher-input-background: var(--AMOLED-secondary-colour);
+  /* Search Background */
+  /* Unknown */
+  --info-positive-text: #fff;
+  --info-warning-text: #fff;
+  --info-danger-text: #fff;
+  --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+  --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+  --info-help-text: #fff;
+  --status-warning-text: #000;
+  --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+  --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+  --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+  --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+  --logo-primary: #fff;
+  --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+  --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+  --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  --activity-card-background: var(--AMOLED-client-colour);
 }
 
 /*-----------------------------------------
     Messages
 -----------------------------------------*/
-
 /* Codeblock */
-.theme-dark .markup-2BOw-j code
-{
-    /* background-color: var(--AMOLED-secondary-colour); */
-    border-color: var(--AMOLED-secondary-colour);
+.theme-dark .markup-2BOw-j code {
+  /* background-color: var(--AMOLED-secondary-colour); */
+  border-color: var(--AMOLED-secondary-colour);
 }
 
 /* Inline Code */
-.theme-dark .markup-2BOw-j code.inline, .inlineCode-2ngu6Y
-{
-    border: 1px solid;
-    border-radius: 3px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 2.720px;
-    padding-right: 2.720px;
-    border-color: var(--AMOLED-secondary-colour);
+.theme-dark .markup-2BOw-j code.inline, .inlineCode-2ngu6Y {
+  border: 1px solid;
+  border-radius: 3px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 2.72px;
+  padding-right: 2.72px;
+  border-color: var(--AMOLED-secondary-colour);
 }
 
 /*-----------------------------------------
     Text Area
 -----------------------------------------*/
-
 /* Auto Complete */
-.theme-dark .autocomplete-1vrmpx
-{
-    background-color: var(--AMOLED-client-colour);
+.theme-dark .autocomplete-1vrmpx {
+  background-color: var(--AMOLED-client-colour);
 }
 
 /* Auto Complete Selected */
-.theme-dark .selected-1Tbx07
-{
-    background-color: var(--AMOLED-secondary-colour);
+.theme-dark .selected-1Tbx07 {
+  background-color: var(--AMOLED-secondary-colour);
 }
 
 /*-----------------------------------------
     Channels
 -----------------------------------------*/
-.theme-dark .progressBarContainer-cCu8a2
-{
-    display: none;
+.theme-dark .progressBarContainer-cCu8a2 {
+  display: none;
 }
 
 /*-----------------------------------------
     Friends Tab
 -----------------------------------------*/
 /* Add Friends Menu */
-.theme-dark .peopleColumn-29fq28
-{
-    background-color: var(--AMOLED-client-colour);
+.theme-dark .peopleColumn-29fq28 {
+  background-color: var(--AMOLED-client-colour);
 }
 
 /*-----------------------------------------
     Search Bar
 -----------------------------------------*/
-
 /* Search Bar */
-.theme-dark .container-3ayLPN
-{
-    background-color: var(--AMOLED-client-colour);
+.theme-dark .container-3ayLPN {
+  background-color: var(--AMOLED-client-colour);
 }
-.option-96V44q:after 
-{
-    opacity: 0;
+
+.option-96V44q:after {
+  opacity: 0;
 }
 
 /*-----------------------------------------
     Tool Tips
 -----------------------------------------*/
-
 /* Tool Tip Border */
-.theme-dark .tooltipPrimary-1d1ph4
-{
-    border: var(--AMOLED-secondary-colour) 1px solid;
-    top: 1px;
-    left: 0px;
+.theme-dark .tooltipPrimary-1d1ph4 {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  top: 1px;
+  left: 0px;
 }
 
 /* Tool Tip Custom Badge */
 .theme-dark .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:before,
-.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before
-{
-    border: var(--AMOLED-secondary-colour) 1px solid;
+.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before {
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /* Remove triangles (for now) */
 .theme-dark .tooltipPointer-3ZfirK,
 .theme-dark .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:after,
-.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after
-{
-    display: none;
+.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after {
+  display: none;
 }
 
 /*-----------------------------------------
     User Popouts
 -----------------------------------------*/
-
 /* User Popouts */
 .theme-dark .userPopout-xaxa6l,
-.theme-dark .fullscreenOnMobile-1bD22y
-{
-    border: var(--AMOLED-secondary-colour) 1px solid;
+.theme-dark .fullscreenOnMobile-1bD22y {
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /*-----------------------------------------
     Status Selector
 -----------------------------------------*/
-
 /* Status Selector Menu */
-.theme-dark .menu-3sdvDG[role="menu"]
-{
-    border: var(--AMOLED-secondary-colour) 1px solid;
+.theme-dark .menu-3sdvDG[role=menu] {
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /*-----------------------------------------
     Delete Message Popout
 -----------------------------------------*/
-
 /* Background Colour */
 .theme-dark .root-1gCeng,
-.theme-dark .message-2qRu38
-{
-    background-color: var(--AMOLED-client-colour);
+.theme-dark .message-2qRu38 {
+  background-color: var(--AMOLED-client-colour);
 }
 
 /* Remove shadow as these Popouts already have borders */
 .theme-dark .root-1gCeng,
-.theme-dark .footer-2gL1pp
-{
-    box-shadow: 0 0 0 0px;
+.theme-dark .footer-2gL1pp {
+  box-shadow: 0 0 0 0px;
 }
