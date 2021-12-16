@@ -1,0 +1,75 @@
+/*-----------------------------------------
+    Themes Tab
+-----------------------------------------*/
+
+// Theme Info
+$AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
+$AMOLED-icon-size: 30px;
+$AMOLED-icon-position: 10px 12px;
+
+// Versioning
+$AMOLED-version: "v1.2.0 ";
+$AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+$AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+
+/* Addon Cards */
+.bd-addon-card
+{
+    border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/* Hide default BD Theme Icon */
+[id='True AMOLED-card'] .bd-addon-header .bd-icon path,
+[id='True AMOLED Live-card'] .bd-addon-header .bd-icon path
+{
+	display: none;
+}
+
+/* New Theme Icon */
+[id='True AMOLED-card'] .bd-addon-header,
+[id='True AMOLED Live-card'] .bd-addon-header
+{
+	background-image: $AMOLED-icon-image;
+	background-repeat: no-repeat;
+	background-size: $AMOLED-icon-size;
+	background-position: $AMOLED-icon-position;
+}
+
+[id='True AMOLED-card'] .bd-version,
+[id='True AMOLED Live-card'] .bd-version,
+[id='True AMOLED-card'] .bd-author,
+[id='True AMOLED Live-card'] .bd-author,
+[id='True AMOLED-card'] .bd-title .bd-link,
+[id='True AMOLED Live-card'] .bd-title .bd-link
+{
+ 	font-size: 0px;
+}
+
+/* True AMOLED Version */
+[id='True AMOLED-card'] .bd-version:after,
+[id='True AMOLED Live-card'] .bd-version:after
+{
+	font-size: 14px;
+	content: $AMOLED-version;
+}
+
+/* True AMOLED Author */
+[id='True AMOLED-card'] .bd-author:after,
+[id='True AMOLED-card'] .bd-title .bd-link:after
+{
+	font-size: 14px;
+	content: $AMOLED-author;
+}
+
+/* True AMOLED Dev Author */
+[id='True AMOLED Live-card'] .bd-author:after,
+[id='True AMOLED Live-card'] .bd-title .bd-link:after
+{
+	font-size: 14px;
+	content: $AMOLED-Live-author;
+}
+
+.theme-dark .footer-2gL1pp
+{
+    background-color: var(--AMOLED-client-colour);
+}

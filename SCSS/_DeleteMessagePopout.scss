@@ -1,0 +1,17 @@
+/*-----------------------------------------
+    Delete Message Popout
+-----------------------------------------*/
+
+/* Background Colour */
+.theme-dark .root-1gCeng,
+.theme-dark .message-2qRu38
+{
+    background-color: var(--AMOLED-client-colour);
+}
+
+/* Remove shadow as these Popouts already have borders */
+.theme-dark .root-1gCeng,
+.theme-dark .footer-2gL1pp
+{
+    box-shadow: 0 0 0 0px;
+}
