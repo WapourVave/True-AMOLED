@@ -38,6 +38,16 @@
 * SOFTWARE.
 **/
 /*-----------------------------------------
+    Theme Vars
+-----------------------------------------*/
+/* Global Variables */
+:root {
+  /* AMOLED */
+  --AMOLED-client-colour: #000000;
+  --AMOLED-secondary-colour: #191b1e;
+}
+
+/*-----------------------------------------
     Themes Tab
 -----------------------------------------*/
 /* Addon Cards */
@@ -73,7 +83,7 @@
 [id="True AMOLED-card"] .bd-version:after,
 [id="True AMOLED Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.2.0 ";
+  content: "v1.3.0 ";
 }
 
 /* True AMOLED Author */
@@ -92,16 +102,6 @@
 
 .theme-dark .footer-2gL1pp {
   background-color: var(--AMOLED-client-colour);
-}
-
-/*-----------------------------------------
-    Theme Vars
------------------------------------------*/
-/* Global Variables */
-:root {
-  /* AMOLED */
-  --AMOLED-client-colour: #000000;
-  --AMOLED-secondary-colour: #191b1e;
 }
 
 /*-----------------------------------------
@@ -186,13 +186,12 @@
 -----------------------------------------*/
 /* Codeblock */
 .theme-dark .markup-2BOw-j code {
-  /* background-color: var(--AMOLED-secondary-colour); */
-  border-color: var(--AMOLED-secondary-colour);
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /* Inline Code */
 .theme-dark .markup-2BOw-j code.inline, .inlineCode-2ngu6Y {
-  border: 1px solid;
+  border: var(--AMOLED-secondary-colour) 1px solid;
   border-radius: 3px;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -201,12 +200,31 @@
   border-color: var(--AMOLED-secondary-colour);
 }
 
+/* Embeds */
+.theme-dark .embedWrapper-lXpS3L .grid-1nZz7S {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-left: unset;
+  border-radius: 0px 3px 3px 0px;
+}
+
+/* Message Quick Hover Options */
+.theme-dark .buttonContainer-DHceWr .buttons-cl5qTG .wrapper-2aW0bm {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/* File Attachments */
+.theme-dark .embedWrapper-lXpS3L.container-1pMiXm {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 3px;
+}
+
 /*-----------------------------------------
     Text Area
 -----------------------------------------*/
 /* Auto Complete */
 .theme-dark .autocomplete-1vrmpx {
   background-color: var(--AMOLED-client-colour);
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /* Auto Complete Selected */
@@ -214,11 +232,41 @@
   background-color: var(--AMOLED-secondary-colour);
 }
 
+/* Emoji Menu */
+.drawerSizingWrapper-17Mss4 {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/* Emoji Menu Tab */
+.nav-7UD0KD [role=tab] {
+  background-color: transparent;
+}
+
 /*-----------------------------------------
     Channels
 -----------------------------------------*/
+/* Boost Progress Bar */
 .theme-dark .progressBarContainer-cCu8a2 {
   display: none;
+}
+
+/* Server Name Header */
+.container-1taM1r.clickable-25tGDB .header-2V-4Sw {
+  background-color: transparent;
+}
+
+/* Server Boost Star */
+.theme-dark .goalTextContainer-30Wr7E .flowerStar-1GeTsn path {
+  display: none;
+}
+
+/* Channel Unread Pill */
+.theme-dark [aria-label=Channels] .unread-2lAfLh {
+  display: none;
+}
+
+.theme-dark [aria-label=Channels] .unread-2lAfLh + .content-1x5b-n path {
+  fill: #fff;
 }
 
 /*-----------------------------------------
@@ -230,15 +278,28 @@
 }
 
 /*-----------------------------------------
-    Search Bar
+    Search
 -----------------------------------------*/
 /* Search Bar */
-.theme-dark .container-3ayLPN {
+.theme-dark .container-3ayLPN,
+.theme-dark .queryContainer-RKFJW-.focused-2bY0OD {
   background-color: var(--AMOLED-client-colour);
 }
 
-.option-96V44q:after {
+.theme-dark .option-96V44q:after {
   opacity: 0;
+}
+
+/* Search Results */
+.theme-dark .searchResultsWrap-3-pOjs {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 6px;
+}
+
+/* Selected Tab */
+.theme-dark .searchResultsWrap-3-pOjs .item-PXvHYJ,
+.theme-dark .searchResultsWrap-3-pOjs .item-PXvHYJ:hover {
+  background-color: transparent !important;
 }
 
 /*-----------------------------------------
@@ -269,7 +330,8 @@
 -----------------------------------------*/
 /* User Popouts */
 .theme-dark .userPopout-xaxa6l,
-.theme-dark .fullscreenOnMobile-1bD22y {
+.theme-dark .fullscreenOnMobile-1bD22y,
+.accountProfileCard-1XCH88 {
   border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
@@ -294,4 +356,103 @@
 .theme-dark .root-1gCeng,
 .theme-dark .footer-2gL1pp {
   box-shadow: 0 0 0 0px;
+}
+
+/*-----------------------------------------
+    Server Folders
+-----------------------------------------*/
+/* Expanded Folders */
+.theme-dark .expandedFolderBackground-3ZDF05 {
+  width: 50px;
+}
+
+.theme-dark .expandedFolderBackground-3ZDF05:not(.collapsed-2Zqqnx) {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 12px;
+}
+
+/* Keep Servers inside the border */
+.theme-dark [aria-label=Servers] .listItem-2Ig28I {
+  left: 2px;
+  top: 2px;
+}
+
+/* Move Discord Logo and DM's */
+.theme-dark .listItem-2Ig28I {
+  left: 2px;
+}
+
+/* Move Unread Pills back to the edge of the screen */
+.theme-dark .pill-ZqtR4i,
+.theme-dark .pill-1Z5PKm {
+  left: -2px;
+}
+
+/* Extend the Border Size */
+.theme-dark [aria-label=Servers] .wrapper-shyHJt {
+  padding-bottom: 8px;
+}
+
+/*-----------------------------------------
+    Keyboard Shortcuts
+-----------------------------------------*/
+/* Keyboard Shortcuts */
+.theme-dark .keyboardShortcutsModal-3piNz7 {
+  background-color: var(--AMOLED-client-colour) !important;
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/*-----------------------------------------
+    Addon Error Popout
+-----------------------------------------*/
+/* Untheme'd Divs */
+.bd-tab-item.selected {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/* Addon Header */
+.bd-addon-error.collapsed,
+.bd-addon-error.expanded {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 8px;
+}
+
+/* Fix background border colour */
+.bd-addon-error {
+  background-color: transparent !important;
+}
+
+/* Remove out of place border */
+.divider-3573oO.topDivider-3G26Ct {
+  border: 0px;
+}
+
+.bd-addon-error-stack code {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/*-----------------------------------------
+    Quick Switcher
+-----------------------------------------*/
+/* Text Area */
+.quickswitcher-3JagVE .input-2VB9rf {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/*-----------------------------------------
+    BD Toasts
+-----------------------------------------*/
+/* Add border to toasts */
+.bd-toast {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/*-----------------------------------------
+    Channel Tabs
+-----------------------------------------*/
+/* Remove tab counter background */
+.theme-dark .channelTabs-tab .channelTabs-noUnread,
+.theme-dark .channelTabs-tab .channelTabs-noMention,
+.theme-dark .channelTabs-typingBadge {
+  background-color: transparent;
 }

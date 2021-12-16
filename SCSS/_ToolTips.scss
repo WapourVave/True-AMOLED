@@ -2,10 +2,13 @@
     Tool Tips
 -----------------------------------------*/
 
+// Imports
+@use "DiscordThemeVars" as *;
+
 /* Tool Tip Border */
 .theme-dark .tooltipPrimary-1d1ph4
 {
-    border: var(--AMOLED-secondary-colour) 1px solid;
+    border: $contrast-border;
     top: 1px;
     left: 0px;
 }
@@ -14,7 +17,7 @@
 .theme-dark .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:before,
 .theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before
 {
-    border: var(--AMOLED-secondary-colour) 1px solid;
+    border: $contrast-border;
 }
 
 /* Remove triangles (for now) */

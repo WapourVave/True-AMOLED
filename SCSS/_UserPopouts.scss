@@ -2,9 +2,13 @@
     User Popouts
 -----------------------------------------*/
 
+// Imports
+@use "DiscordThemeVars" as *;
+
 /* User Popouts */
 .theme-dark .userPopout-xaxa6l,
-.theme-dark .fullscreenOnMobile-1bD22y
+.theme-dark .fullscreenOnMobile-1bD22y,
+.accountProfileCard-1XCH88
 {
-    border: var(--AMOLED-secondary-colour) 1px solid;
+    border: $contrast-border;
 }

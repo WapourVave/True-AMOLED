@@ -1,0 +1,30 @@
+/*-----------------------------------------
+    Search
+-----------------------------------------*/
+
+@use "DiscordThemeVars" as *;
+
+/* Search Bar */
+.theme-dark .container-3ayLPN,
+.theme-dark .queryContainer-RKFJW-.focused-2bY0OD
+{
+    background-color: var(--AMOLED-client-colour);
+}
+.theme-dark .option-96V44q:after 
+{
+    opacity: 0;
+}
+
+/* Search Results */
+.theme-dark .searchResultsWrap-3-pOjs
+{
+    border: $contrast-border;
+    border-radius: 6px;
+}
+
+/* Selected Tab */
+.theme-dark .searchResultsWrap-3-pOjs .item-PXvHYJ,
+.theme-dark .searchResultsWrap-3-pOjs .item-PXvHYJ:hover
+{
+    background-color: transparent!important;
+}

@@ -8,10 +8,16 @@
 @use "TextArea";
 @use "Channels";
 @use "FriendsTab";
-@use "SearchBar";
+@use "Search";
 @use "ToolTips";
 @use "UserPopouts";
 @use "StatusSelector";
 @use "DeleteMessagePopout";
+@use "ServerFolders";
+@use "KeyboardShortcutsPopout";
+@use "BD-AddonErrorPopout";
+@use "QuickSwitcher";
+@use "BD-Toasts";
+@use "BD-ChannelTabs";
 
 // Please read the License before using stuff!

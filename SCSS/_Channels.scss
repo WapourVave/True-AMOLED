@@ -1,7 +1,32 @@
 /*-----------------------------------------
     Channels
 -----------------------------------------*/
+
+/* Boost Progress Bar */
 .theme-dark .progressBarContainer-cCu8a2
 {
     display: none;
+}
+
+/* Server Name Header */
+.container-1taM1r.clickable-25tGDB .header-2V-4Sw
+{
+    background-color: transparent;
+}
+
+/* Server Boost Star */
+.theme-dark .goalTextContainer-30Wr7E .flowerStar-1GeTsn path
+{
+    display: none;
+}
+
+/* Channel Unread Pill */
+.theme-dark [aria-label="Channels"] .unread-2lAfLh
+{
+    display: none;
+}
+
+.theme-dark [aria-label="Channels"] .unread-2lAfLh+.content-1x5b-n path
+{
+    fill: #fff;
 }

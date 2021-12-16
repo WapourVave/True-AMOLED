@@ -1,0 +1,11 @@
+/*-----------------------------------------
+    BD Toasts
+-----------------------------------------*/
+
+@use "DiscordThemeVars" as *;
+
+/* Add border to toasts */
+.bd-toast
+{
+    border: $contrast-border
+}

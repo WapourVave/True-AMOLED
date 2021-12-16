@@ -1,0 +1,13 @@
+/*-----------------------------------------
+    Channel Tabs
+-----------------------------------------*/
+
+@use "DiscordThemeVars" as *;
+
+/* Remove tab counter background */
+.theme-dark .channelTabs-tab .channelTabs-noUnread,
+.theme-dark .channelTabs-tab .channelTabs-noMention,
+.theme-dark .channelTabs-typingBadge
+{
+    background-color: transparent;
+}

@@ -1,0 +1,36 @@
+/*-----------------------------------------
+    Addon Error Popout
+-----------------------------------------*/
+
+@use "DiscordThemeVars" as *;
+
+/* Untheme'd Divs */
+.bd-tab-item.selected
+{
+    background-color: var(--AMOLED-client-colour);
+}
+
+/* Addon Header */
+.bd-addon-error.collapsed,
+.bd-addon-error.expanded
+{
+    border: $contrast-border;
+    border-radius: 8px;
+}
+
+/* Fix background border colour */
+.bd-addon-error
+{
+    background-color: transparent!important;
+}
+
+/* Remove out of place border */
+.divider-3573oO.topDivider-3G26Ct
+{
+    border: 0px;
+}
+
+.bd-addon-error-stack code
+{
+    border: $contrast-border;
+}

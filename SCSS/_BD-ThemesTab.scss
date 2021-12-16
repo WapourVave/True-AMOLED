@@ -2,20 +2,23 @@
     Themes Tab
 -----------------------------------------*/
 
+// Imports
+@use "DiscordThemeVars" as *;
+
 // Theme Info
 $AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
 $AMOLED-icon-size: 30px;
 $AMOLED-icon-position: 10px 12px;
 
 // Versioning
-$AMOLED-version: "v1.2.0 ";
+$AMOLED-version: "v1.3.0 ";
 $AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 $AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 
 /* Addon Cards */
 .bd-addon-card
 {
-    border: var(--AMOLED-secondary-colour) 1px solid;
+    border: $contrast-border;
 }
 
 /* Hide default BD Theme Icon */

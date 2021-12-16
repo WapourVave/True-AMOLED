@@ -1,0 +1,43 @@
+/*-----------------------------------------
+    Server Folders
+-----------------------------------------*/
+
+// Imports
+@use "DiscordThemeVars" as *;
+
+/* Expanded Folders */
+.theme-dark .expandedFolderBackground-3ZDF05
+{
+    width: 50px;
+}
+.theme-dark .expandedFolderBackground-3ZDF05:not(.collapsed-2Zqqnx)
+{
+    border: $contrast-border;
+    border-radius: 12px;
+}
+
+/* Keep Servers inside the border */
+.theme-dark [aria-label="Servers"] .listItem-2Ig28I
+{
+    left: 2px;
+    top: 2px;
+}
+
+/* Move Discord Logo and DM's */
+.theme-dark .listItem-2Ig28I
+{
+    left: 2px;
+}
+
+/* Move Unread Pills back to the edge of the screen */
+.theme-dark .pill-ZqtR4i,
+.theme-dark .pill-1Z5PKm
+{
+    left: -2px;
+}
+
+/* Extend the Border Size */
+.theme-dark [aria-label="Servers"] .wrapper-shyHJt
+{
+    padding-bottom: 8px;
+}

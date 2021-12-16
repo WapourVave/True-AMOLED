@@ -2,21 +2,44 @@
     Messages
 -----------------------------------------*/
 
+// Imports
+@use "DiscordThemeVars" as *;
+
 /* Codeblock */
 .theme-dark .markup-2BOw-j code
 {
-    /* background-color: var(--AMOLED-secondary-colour); */
-    border-color: var(--AMOLED-secondary-colour);
+    border: $contrast-border;
 }
 
 /* Inline Code */
 .theme-dark .markup-2BOw-j code.inline, .inlineCode-2ngu6Y
 {
-    border: 1px solid;
+    border: $contrast-border;
     border-radius: 3px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 2.720px;
     padding-right: 2.720px;
     border-color: var(--AMOLED-secondary-colour);
+}
+
+/* Embeds */
+.theme-dark .embedWrapper-lXpS3L .grid-1nZz7S
+{
+    border: $contrast-border;
+    border-left: unset;
+    border-radius: 0px 3px 3px 0px;
+}
+
+/* Message Quick Hover Options */
+.theme-dark .buttonContainer-DHceWr .buttons-cl5qTG .wrapper-2aW0bm
+{
+    border: $contrast-border;
+}
+
+/* File Attachments */
+.theme-dark .embedWrapper-lXpS3L.container-1pMiXm
+{
+    border: $contrast-border;
+    border-radius: 3px;
 }

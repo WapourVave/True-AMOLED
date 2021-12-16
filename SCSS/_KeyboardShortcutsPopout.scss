@@ -1,12 +1,12 @@
 /*-----------------------------------------
-    Status Selector
+    Keyboard Shortcuts
 -----------------------------------------*/
 
-// Imports
 @use "DiscordThemeVars" as *;
 
-/* Status Selector Menu */
-.theme-dark .menu-3sdvDG[role="menu"]
+/* Keyboard Shortcuts */
+.theme-dark .keyboardShortcutsModal-3piNz7
 {
+    background-color: var(--AMOLED-client-colour)!important;
     border: $contrast-border;
 }
