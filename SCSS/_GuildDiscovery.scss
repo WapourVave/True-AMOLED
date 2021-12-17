@@ -1,0 +1,51 @@
+/*-----------------------------------------
+    Guild Discovery
+-----------------------------------------*/
+
+// Imports
+@use "DiscordThemeVars" as *;
+
+/* Backgrounds */
+.theme-dark .scroller-1d5FgU,
+.theme-dark .search-1iTphC .searchBox-3Y2Vi7.searchBox-2_mAlO
+{
+    background-color: var(--AMOLED-client-colour);
+}
+
+/* Remove the ring */
+.theme-dark .searchBox-3Y2Vi7
+{
+    box-shadow: unset!important;
+}
+
+/* Text Input Colour */
+.theme-dark .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng
+{
+    color: var(--text-normal);
+}
+.theme-dark .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng::placeholder
+{
+    color: var(--text-muted);
+}
+
+/* Search Icon */
+.theme-dark .searchIcon-1a1-yA path
+{
+    fill: var(--interactive-muted);
+}
+
+/* Clear Input Icon */
+.theme-dark .clear-U3WkKp path
+{
+    fill: var(--interactive-normal);
+}
+.theme-dark .clear-U3WkKp path:hover
+{
+    fill: var(--interactive-hover);
+}
+
+/* Guild Cards */
+.theme-dark .card-3DjzTQ
+{
+    border: $contrast-border;
+}

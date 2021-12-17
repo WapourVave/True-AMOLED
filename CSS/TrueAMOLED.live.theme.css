@@ -45,6 +45,8 @@
   /* AMOLED */
   --AMOLED-client-colour: #000000;
   --AMOLED-secondary-colour: #191b1e;
+  --AMOLED-hover-colour: #0d0e0f;
+  --AMOLED-active-colour: #131416;
 }
 
 /*-----------------------------------------
@@ -83,7 +85,7 @@
 [id="True AMOLED-card"] .bd-version:after,
 [id="True AMOLED Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.3.0 ";
+  content: "v1.4.0 ";
 }
 
 /* True AMOLED Author */
@@ -108,7 +110,8 @@
     Discord Dark Theme
 -----------------------------------------*/
 /* Discord Variables */
-.theme-dark {
+.theme-dark,
+.layer-2KE1M9 .theme-light {
   /* Client Background */
   --background-primary: var(--AMOLED-client-colour);
   /* Base Client Colour */
@@ -122,9 +125,9 @@
   /* New Unreads Background and such */
   --background-floating: var(--AMOLED-client-colour);
   /* User Popouts */
-  --background-modifier-hover: rgba(79,84,92,0.16);
-  --background-modifier-active: rgba(79,84,92,0.24);
-  --background-modifier-selected: rgba(79,84,92,0.32);
+  --background-modifier-hover: var(--AMOLED-hover-colour);
+  --background-modifier-active: var(--AMOLED-active-colour);
+  --background-modifier-selected: var(--AMOLED-secondary-colour);
   --background-modifier-accent: hsla(0,0%,100%,0.06);
   /* Main Client Buttons */
   --interactive-normal: #b9bbbe;
@@ -153,11 +156,11 @@
   --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
   --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
   /* Scrollbar */
-  --scrollbar-thin-thumb: #202225;
+  --scrollbar-thin-thumb: var(--AMOLED-secondary-colour);
   --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: #202225;
+  --scrollbar-auto-thumb: var(--AMOLED-secondary-colour);
   --scrollbar-auto-track: transparent;
-  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-thumb: var(--AMOLED-secondary-colour);
   --scrollbar-auto-scrollbar-color-track: #2f3136;
   /* Quick Switcher */
   --deprecated-quickswitcher-input-background: var(--AMOLED-secondary-colour);
@@ -179,6 +182,16 @@
   --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
   --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   --activity-card-background: var(--AMOLED-client-colour);
+  /* Deprecated */
+  --deprecated-card-bg: rgba(32,34,37,0.6);
+  --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+  --deprecated-store-bg: #36393f;
+  --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+  --deprecated-text-input-bg: var(--AMOLED-client-colour);
+  --deprecated-text-input-border: rgba(0,0,0,0.3);
+  --deprecated-text-input-border-hover: #040405;
+  --deprecated-text-input-border-disabled: #202225;
+  --deprecated-text-input-prefix: #dcddde;
 }
 
 /*-----------------------------------------
@@ -216,6 +229,16 @@
 .theme-dark .embedWrapper-lXpS3L.container-1pMiXm {
   border: var(--AMOLED-secondary-colour) 1px solid;
   border-radius: 3px;
+}
+
+/* Image Popouts */
+.theme-dark .imageWrapper-2p5ogY.image-1tIMwV {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 4px;
+}
+
+.theme-dark .modal-qgFCbT.fullscreenOnMobile-1bD22y {
+  border: 0px;
 }
 
 /*-----------------------------------------
@@ -455,4 +478,46 @@
 .theme-dark .channelTabs-tab .channelTabs-noMention,
 .theme-dark .channelTabs-typingBadge {
   background-color: transparent;
+}
+
+/*-----------------------------------------
+    Guild Discovery
+-----------------------------------------*/
+/* Backgrounds */
+.theme-dark .scroller-1d5FgU,
+.theme-dark .search-1iTphC .searchBox-3Y2Vi7.searchBox-2_mAlO {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/* Remove the ring */
+.theme-dark .searchBox-3Y2Vi7 {
+  box-shadow: unset !important;
+}
+
+/* Text Input Colour */
+.theme-dark .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng {
+  color: var(--text-normal);
+}
+
+.theme-dark .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng::placeholder {
+  color: var(--text-muted);
+}
+
+/* Search Icon */
+.theme-dark .searchIcon-1a1-yA path {
+  fill: var(--interactive-muted);
+}
+
+/* Clear Input Icon */
+.theme-dark .clear-U3WkKp path {
+  fill: var(--interactive-normal);
+}
+
+.theme-dark .clear-U3WkKp path:hover {
+  fill: var(--interactive-hover);
+}
+
+/* Guild Cards */
+.theme-dark .card-3DjzTQ {
+  border: var(--AMOLED-secondary-colour) 1px solid;
 }

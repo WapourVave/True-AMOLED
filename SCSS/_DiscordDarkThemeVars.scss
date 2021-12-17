@@ -3,7 +3,8 @@
 -----------------------------------------*/
 
 /* Discord Variables */
-.theme-dark
+.theme-dark,
+.layer-2KE1M9 .theme-light
 {
     /* Client Background */
     --background-primary: var(--AMOLED-client-colour); /* Base Client Colour */
@@ -12,9 +13,9 @@
     --background-tertiary: var(--AMOLED-client-colour); /* Titlebar, Server List Background, Search Text Area's, Borders */
     --background-accent: #4f545c; /* New Unreads Background and such */
     --background-floating: var(--AMOLED-client-colour); /* User Popouts */
-    --background-modifier-hover: rgba(79,84,92,0.16);
-    --background-modifier-active: rgba(79,84,92,0.24);
-    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-hover: var(--AMOLED-hover-colour);
+    --background-modifier-active: var(--AMOLED-active-colour);
+    --background-modifier-selected: var(--AMOLED-secondary-colour);
     --background-modifier-accent: hsla(0,0%,100%,0.06);
 
     /* Main Client Buttons */
@@ -48,11 +49,11 @@
     --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
 
     /* Scrollbar */
-    --scrollbar-thin-thumb: #202225;
+    --scrollbar-thin-thumb: var(--AMOLED-secondary-colour);
     --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #202225;
+    --scrollbar-auto-thumb: var(--AMOLED-secondary-colour);
     --scrollbar-auto-track: transparent;
-    --scrollbar-auto-scrollbar-color-thumb: #202225;
+    --scrollbar-auto-scrollbar-color-thumb: var(--AMOLED-secondary-colour);
     --scrollbar-auto-scrollbar-color-track: #2f3136;
 
     /* Quick Switcher */
@@ -75,4 +76,15 @@
     --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
     --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
     --activity-card-background: var(--AMOLED-client-colour);
+
+    /* Deprecated */
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: #36393f;
+    --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+    --deprecated-text-input-bg: var(--AMOLED-client-colour);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
 }
