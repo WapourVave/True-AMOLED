@@ -57,7 +57,18 @@
     --scrollbar-auto-scrollbar-color-track: #2f3136;
 
     /* Quick Switcher */
-    --deprecated-quickswitcher-input-background: var(--AMOLED-secondary-colour); /* Search Background */
+    --deprecated-quickswitcher-input-background: var(--AMOLED-client-colour); /* Search Background */
+    --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+
+    /* Deprecated */
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: #36393f;
+    --deprecated-text-input-bg: var(--AMOLED-client-colour);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
 
     /* Unknown */
     --info-positive-text: #fff;
@@ -76,15 +87,4 @@
     --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
     --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
     --activity-card-background: var(--AMOLED-client-colour);
-
-    /* Deprecated */
-    --deprecated-card-bg: rgba(32,34,37,0.6);
-    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
-    --deprecated-store-bg: #36393f;
-    --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
-    --deprecated-text-input-bg: var(--AMOLED-client-colour);
-    --deprecated-text-input-border: rgba(0,0,0,0.3);
-    --deprecated-text-input-border-hover: #040405;
-    --deprecated-text-input-border-disabled: #202225;
-    --deprecated-text-input-prefix: #dcddde;
 }
