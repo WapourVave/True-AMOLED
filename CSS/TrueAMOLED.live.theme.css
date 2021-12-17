@@ -85,7 +85,7 @@
 [id="True AMOLED-card"] .bd-version:after,
 [id="True AMOLED Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.7.0 ";
+  content: "v1.8.1 ";
 }
 
 /* True AMOLED Author */
@@ -307,6 +307,14 @@
 }
 
 /*-----------------------------------------
+    Unsaved Changes Popout
+-----------------------------------------*/
+.container-2VW0UT {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  background: var(--AMOLED-client-colour) !important;
+}
+
+/*-----------------------------------------
     Discord Dark Theme
 -----------------------------------------*/
 /* Discord Variables */
@@ -403,14 +411,15 @@
 }
 
 /* Inline Code */
-.theme-dark .markup-2BOw-j code.inline, .inlineCode-2ngu6Y {
+.theme-dark .markup-2BOw-j code.inline,
+.inlineCode-2ngu6Y {
   border: var(--AMOLED-secondary-colour) 1px solid;
   border-radius: 3px;
+  border-color: --AMOLED-secondary-colour;
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-left: 2.72px;
-  padding-right: 2.72px;
-  border-color: var(--AMOLED-secondary-colour);
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 /* Embeds */
@@ -670,4 +679,31 @@
 /* Guild Cards */
 .theme-dark .card-3DjzTQ {
   border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/*-----------------------------------------
+    Calls
+-----------------------------------------*/
+/* Empty Video Preview */
+.inner-2O5YO7,
+.tile-2naSqK {
+  background-color: transparent;
+}
+
+/* Empty video/stream Preview */
+.emptyPreview-2kuSNe {
+  background: var(--AMOLED-client-colour);
+  opacity: 1;
+}
+
+/* Add Borders to Video Player */
+.tile-2gi3tr,
+.pictureInPictureVideo-2iKsGg {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  background: var(--AMOLED-client-colour);
+}
+
+/* Video Preview */
+.tile-2gi3tr {
+  border-radius: 6px !important;
 }

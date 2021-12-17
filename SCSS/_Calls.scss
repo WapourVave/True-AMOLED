@@ -1,0 +1,33 @@
+/*-----------------------------------------
+    Calls
+-----------------------------------------*/
+
+@use "DiscordThemeVars" as *;
+
+/* Empty Video Preview */
+.inner-2O5YO7,
+.tile-2naSqK
+{
+    background-color: transparent;
+}
+
+/* Empty video/stream Preview */
+.emptyPreview-2kuSNe
+{
+    background: var(--AMOLED-client-colour);
+    opacity: 1;
+}
+
+/* Add Borders to Video Player */
+.tile-2gi3tr,
+.pictureInPictureVideo-2iKsGg
+{
+    border: $contrast-border;
+    background: var(--AMOLED-client-colour);
+}
+
+/* Video Preview */
+.tile-2gi3tr
+{
+    border-radius: 6px!important;
+}

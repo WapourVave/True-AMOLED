@@ -46,6 +46,7 @@
 @use "ServerSettings/Overview";
 @use "ServerSettings/Stickers";
 @use "ServerSettings/AuditLog";
+@use "ServerSettings/UnsavedChangesPopout";
 
 @use "DiscordThemeVars";
 @use "DiscordDarkThemeVars";
@@ -61,3 +62,4 @@
 @use "KeyboardShortcutsPopout";
 @use "QuickSwitcher";
 @use "GuildDiscovery";
+@use "Calls";
