@@ -1,0 +1,26 @@
+/*-----------------------------------------
+    Privacy and Safety
+-----------------------------------------*/
+
+// Imports
+@use "../DiscordThemeVars" as *;
+
+/* Status Selector Menu */
+[role="radiogroup"] .item-26Dhrx
+{
+    border: $contrast-border;
+    border-left: unset;
+    border-radius: 0px 3px 3px 0px;
+}
+
+/* Remove border radius from the side colour */
+[role="radiogroup"] .radioBar-bMNUI-
+{
+    border-radius: 0px;
+}
+
+/* Make bottom of the page transparent */
+.formNotice-2_hHWR
+{
+    background-color: transparent;
+}

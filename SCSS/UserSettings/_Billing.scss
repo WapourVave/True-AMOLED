@@ -1,0 +1,27 @@
+/*-----------------------------------------
+    Billing
+-----------------------------------------*/
+
+@use "../DiscordThemeVars" as *;
+
+/* Backgroundify Everything */
+.theme-dark .verticalFit-waKLYN,
+.theme-dark .payment-xT17Mq,
+.theme-dark .payment-xT17Mq:hover,
+.theme-dark .payment-xT17Mq .expandedInfo-3kfShd,
+.theme-dark .card-3Qj_Yx
+{
+    background-color: var(--AMOLED-client-colour);
+}
+
+/* Payment Info */
+.theme-dark .payment-xT17Mq .expandedInfo-3kfShd
+{
+    border: $contrast-border;
+}
+
+/* Footer Redeem Key Area */
+.theme-dark .codeRedemptionRedirect-1wVR4b
+{
+    border: unset;
+}

@@ -36,7 +36,10 @@
 @use "BD/Repos";
 @use "BD/AddonErrorPopout";
 
-@use "UserSettings/FriendsTab";
+@use "UserSettings/Friends";
+@use "UserSettings/ActivityStatus";
+@use "UserSettings/Billing";
+@use "UserSettings/PrivacyAndSafety";
 
 @use "DiscordThemeVars";
 @use "DiscordDarkThemeVars";

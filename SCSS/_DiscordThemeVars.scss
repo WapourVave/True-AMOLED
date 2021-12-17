@@ -2,8 +2,11 @@
     Theme Vars
 -----------------------------------------*/
 
+// @use "DiscordThemeVars" as *;
+// @use "../DiscordThemeVars" as *;
+
 // Version
-$version: "v1.5.0 ";
+$version: "v1.6.0 ";
 
 // Global Vars
 $contrast-border: var(--AMOLED-secondary-colour) 1px solid;
