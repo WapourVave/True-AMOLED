@@ -8,7 +8,13 @@
 /* User Popouts */
 .theme-dark .userPopout-xaxa6l,
 .theme-dark .fullscreenOnMobile-1bD22y,
-.accountProfileCard-1XCH88
+.accountProfileCard-1XCH88,
+.profileBannerPreview-gaX5MP
 {
     border: $contrast-border;
+}
+
+.profileBannerPreview-gaX5MP .bannerNormal-3u-o59.banner-3vVQWW
+{
+    border-radius: unset;
 }

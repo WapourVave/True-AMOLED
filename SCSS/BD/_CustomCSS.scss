@@ -1,0 +1,33 @@
+/*-----------------------------------------
+    BD Custom CSS
+-----------------------------------------*/
+
+@use "../DiscordThemeVars" as *;
+
+/* Custom CSS Tab */
+#bd-editor-panel
+{
+    border: $contrast-border;
+    border-radius: 3px;
+}
+
+/* Custom CSS Popout */
+.floating-window
+{
+    border: $contrast-border;
+    border-radius: 6px;
+}
+
+/* Revert the CSS Tab Themeing */
+.floating-window #bd-editor-panel
+{
+    border: unset;
+    border-radius: unset;
+}
+
+/* Remove Popout Padding */
+.floating-window.resizable
+{
+    padding-bottom: 0px;
+    height: 463px!important;
+}

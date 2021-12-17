@@ -85,7 +85,7 @@
 [id="True AMOLED-card"] .bd-version:after,
 [id="True AMOLED Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.4.0 ";
+  content: "v1.5.0 ";
 }
 
 /* True AMOLED Author */
@@ -103,6 +103,96 @@
 }
 
 .theme-dark .footer-2gL1pp {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/*-----------------------------------------
+    BD Toasts
+-----------------------------------------*/
+/* Add border to toasts */
+.bd-toast {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/*-----------------------------------------
+    Channel Tabs
+-----------------------------------------*/
+/* Remove tab counter background */
+.theme-dark .channelTabs-tab .channelTabs-noUnread,
+.theme-dark .channelTabs-tab .channelTabs-noMention,
+.theme-dark .channelTabs-typingBadge {
+  background-color: transparent;
+}
+
+/*-----------------------------------------
+    BD Custom CSS
+-----------------------------------------*/
+/* Custom CSS Tab */
+#bd-editor-panel {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 3px;
+}
+
+/* Custom CSS Popout */
+.floating-window {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 6px;
+}
+
+/* Revert the CSS Tab Themeing */
+.floating-window #bd-editor-panel {
+  border: unset;
+  border-radius: unset;
+}
+
+/* Remove Popout Padding */
+.floating-window.resizable {
+  padding-bottom: 0px;
+  height: 463px !important;
+}
+
+/*-----------------------------------------
+    BD Repos
+-----------------------------------------*/
+/* Repo Cards */
+.card-x5zW6z {
+  border: var(--AMOLED-secondary-colour) 1px solid !important;
+}
+
+/*-----------------------------------------
+    Addon Error Popout
+-----------------------------------------*/
+/* Untheme'd Divs */
+.bd-tab-item.selected {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/* Addon Header */
+.bd-addon-error.collapsed,
+.bd-addon-error.expanded {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+  border-radius: 8px;
+}
+
+/* Fix background border colour */
+.bd-addon-error {
+  background-color: transparent !important;
+}
+
+/* Remove out of place border */
+.divider-3573oO.topDivider-3G26Ct {
+  border: 0px;
+}
+
+.bd-addon-error-stack code {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+/*-----------------------------------------
+    Friends Tab
+-----------------------------------------*/
+/* Add Friends Menu */
+.theme-dark .peopleColumn-29fq28 {
   background-color: var(--AMOLED-client-colour);
 }
 
@@ -256,12 +346,12 @@
 }
 
 /* Emoji Menu */
-.drawerSizingWrapper-17Mss4 {
+.theme-dark .contentWrapper-SvZHNd {
   border: var(--AMOLED-secondary-colour) 1px solid;
 }
 
 /* Emoji Menu Tab */
-.nav-7UD0KD [role=tab] {
+.theme-dark .nav-7UD0KD [role=tab] {
   background-color: transparent;
 }
 
@@ -290,14 +380,6 @@
 
 .theme-dark [aria-label=Channels] .unread-2lAfLh + .content-1x5b-n path {
   fill: #fff;
-}
-
-/*-----------------------------------------
-    Friends Tab
------------------------------------------*/
-/* Add Friends Menu */
-.theme-dark .peopleColumn-29fq28 {
-  background-color: var(--AMOLED-client-colour);
 }
 
 /*-----------------------------------------
@@ -354,8 +436,13 @@
 /* User Popouts */
 .theme-dark .userPopout-xaxa6l,
 .theme-dark .fullscreenOnMobile-1bD22y,
-.accountProfileCard-1XCH88 {
+.accountProfileCard-1XCH88,
+.profileBannerPreview-gaX5MP {
   border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+.profileBannerPreview-gaX5MP .bannerNormal-3u-o59.banner-3vVQWW {
+  border-radius: unset;
 }
 
 /*-----------------------------------------
@@ -426,58 +513,11 @@
 }
 
 /*-----------------------------------------
-    Addon Error Popout
------------------------------------------*/
-/* Untheme'd Divs */
-.bd-tab-item.selected {
-  background-color: var(--AMOLED-client-colour);
-}
-
-/* Addon Header */
-.bd-addon-error.collapsed,
-.bd-addon-error.expanded {
-  border: var(--AMOLED-secondary-colour) 1px solid;
-  border-radius: 8px;
-}
-
-/* Fix background border colour */
-.bd-addon-error {
-  background-color: transparent !important;
-}
-
-/* Remove out of place border */
-.divider-3573oO.topDivider-3G26Ct {
-  border: 0px;
-}
-
-.bd-addon-error-stack code {
-  border: var(--AMOLED-secondary-colour) 1px solid;
-}
-
-/*-----------------------------------------
     Quick Switcher
 -----------------------------------------*/
 /* Text Area */
 .quickswitcher-3JagVE .input-2VB9rf {
   background-color: var(--AMOLED-client-colour);
-}
-
-/*-----------------------------------------
-    BD Toasts
------------------------------------------*/
-/* Add border to toasts */
-.bd-toast {
-  border: var(--AMOLED-secondary-colour) 1px solid;
-}
-
-/*-----------------------------------------
-    Channel Tabs
------------------------------------------*/
-/* Remove tab counter background */
-.theme-dark .channelTabs-tab .channelTabs-noUnread,
-.theme-dark .channelTabs-tab .channelTabs-noMention,
-.theme-dark .channelTabs-typingBadge {
-  background-color: transparent;
 }
 
 /*-----------------------------------------

@@ -3,17 +3,16 @@
 -----------------------------------------*/
 
 // Imports
-@use "DiscordThemeVars" as *;
+@use "../DiscordThemeVars" as *;
 
 // Theme Info
-$AMOLED-icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
-$AMOLED-icon-size: 30px;
-$AMOLED-icon-position: 10px 12px;
+$icon-image: url(https://raw.githubusercontent.com/WapourVave/True-AMOLED/main/Assets/Theme-Icon/True_AMOLED_Icon.svg);
+$icon-size: 30px;
+$icon-position: 10px 12px;
 
 // Versioning
-$AMOLED-version: "v1.4.0 ";
-$AMOLED-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
-$AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+$author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+$Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 
 /* Addon Cards */
 .bd-addon-card
@@ -32,10 +31,10 @@ $AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 [id='True AMOLED-card'] .bd-addon-header,
 [id='True AMOLED Live-card'] .bd-addon-header
 {
-	background-image: $AMOLED-icon-image;
+	background-image: $icon-image;
 	background-repeat: no-repeat;
-	background-size: $AMOLED-icon-size;
-	background-position: $AMOLED-icon-position;
+	background-size: $icon-size;
+	background-position: $icon-position;
 }
 
 [id='True AMOLED-card'] .bd-version,
@@ -53,7 +52,7 @@ $AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 [id='True AMOLED Live-card'] .bd-version:after
 {
 	font-size: 14px;
-	content: $AMOLED-version;
+	content: $version;
 }
 
 /* True AMOLED Author */
@@ -61,7 +60,7 @@ $AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 [id='True AMOLED-card'] .bd-title .bd-link:after
 {
 	font-size: 14px;
-	content: $AMOLED-author;
+	content: $author;
 }
 
 /* True AMOLED Dev Author */
@@ -69,7 +68,7 @@ $AMOLED-Live-author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 [id='True AMOLED Live-card'] .bd-title .bd-link:after
 {
 	font-size: 14px;
-	content: $AMOLED-Live-author;
+	content: $Live-author;
 }
 
 .theme-dark .footer-2gL1pp
