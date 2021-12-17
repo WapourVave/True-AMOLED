@@ -41,7 +41,11 @@
 @use "UserSettings/Billing";
 @use "UserSettings/PrivacyAndSafety";
 @use "UserSettings/Connections";
-@use "UserSettings/VoiceAndVideo";
+@use "UserSettings/SelectionListPopout";
+
+@use "ServerSettings/Overview";
+@use "ServerSettings/Stickers";
+@use "ServerSettings/AuditLog";
 
 @use "DiscordThemeVars";
 @use "DiscordDarkThemeVars";

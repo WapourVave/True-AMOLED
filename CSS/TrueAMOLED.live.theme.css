@@ -85,7 +85,7 @@
 [id="True AMOLED-card"] .bd-version:after,
 [id="True AMOLED Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.6.2 ";
+  content: "v1.7.0 ";
 }
 
 /* True AMOLED Author */
@@ -255,7 +255,7 @@
 }
 
 /*-----------------------------------------
-    Voice and Video
+    Selection List Popouts
 -----------------------------------------*/
 /* Backgrounds */
 .select-2fjwPw.lookFilled-22uAsw,
@@ -264,12 +264,46 @@
   border-radius: 4px;
 }
 
-/* Popout Location */
-.popout-VcNcHB {
-  position: relative;
+/* Popout Location when on bottom */
+.layer-v9HyYc[style*="top:"] .popout-VcNcHB {
   bottom: 3px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+/* Popout Location when on top */
+.layer-v9HyYc[style*="bottom:"] .popout-VcNcHB {
+  top: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*-----------------------------------------
+    Overview
+-----------------------------------------*/
+/* NEW! Banner Ad */
+.theme-dark .bannerUpsellContainer-1KrLvE {
+  background-color: transparent;
+}
+
+/*-----------------------------------------
+    Stickers
+-----------------------------------------*/
+.tier-2pEkRl {
+  border: var(--AMOLED-secondary-colour) 1px solid;
+}
+
+.theme-dark .tierHeaderContent-3t3DoO,
+.theme-dark .tierBody-3aUxuc {
+  background-color: var(--AMOLED-client-colour);
+}
+
+/*-----------------------------------------
+    Audit Log
+-----------------------------------------*/
+.theme-dark .headerClickable-g5d9lT,
+.theme-dark .headerDefault-2D4Kcg {
+  background-color: transparent;
 }
 
 /*-----------------------------------------

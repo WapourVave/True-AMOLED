@@ -1,0 +1,16 @@
+/*-----------------------------------------
+    Stickers
+-----------------------------------------*/
+
+@use "../DiscordThemeVars" as *;
+
+.tier-2pEkRl
+{
+    border: $contrast-border;
+}
+
+.theme-dark .tierHeaderContent-3t3DoO,
+.theme-dark .tierBody-3aUxuc
+{
+    background-color: var(--AMOLED-client-colour);
+}
